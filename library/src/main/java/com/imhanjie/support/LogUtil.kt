@@ -131,7 +131,7 @@ private fun getTargetStackTraceElement(): StackTraceElement? {
     var shouldTrace = false
     val elements = Thread.currentThread().stackTrace
     for (e in elements) {
-        val isLogMethod = e.className == "com.souche.app.iov.core.support.util.L"
+        val isLogMethod = e.className == "com.imhanjie.support.L"
         if (shouldTrace && !isLogMethod) {
             targetElement = e
             break

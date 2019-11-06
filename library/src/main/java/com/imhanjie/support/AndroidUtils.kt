@@ -17,8 +17,9 @@ class AndroidUtils {
         internal var isDebug = false
 
         @JvmStatic
-        fun install(app: Application) {
+        fun install(app: Application, debug: Boolean) {
             INSTANCE = app
+            isDebug = debug
         }
     }
 
