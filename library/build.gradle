@@ -16,15 +16,13 @@ publish {
     userOrg = 'melody'
     groupId = 'com.imhanjie.library'
     artifactId = 'android-utils'
-    publishVersion = '0.0.5'
+    publishVersion = '0.1.0'
     desc = 'Android Utils'
     website = 'https://github.com/imhanjie/android-utils'
 }
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
-
 
     defaultConfig {
         minSdkVersion 21
@@ -48,7 +46,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
     api "androidx.appcompat:appcompat:1.1.0"
     api 'com.google.code.gson:gson:2.8.6'
 }

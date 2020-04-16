@@ -46,7 +46,7 @@ public class StatusBarUtil {
      * 兼容国内第三方定制 ROM 白色状态栏
      */
     private static void compatThirdRomStatusBar(Activity activity, boolean isDark) {
-        FlymeStatusbarColorUtils.setStatusBarDarkIcon(activity, isDark);
+        FlymeStatusbarColorUtil.setStatusBarDarkIcon(activity, isDark);
         MIUIStatusBarUtil.setStatusBarDarkMode(isDark, activity);
     }
 

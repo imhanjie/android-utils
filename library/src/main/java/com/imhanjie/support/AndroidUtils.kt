@@ -10,17 +10,15 @@ import android.app.Application
  */
 
 
-class AndroidUtils {
+object AndroidUtils {
 
-    companion object {
-        internal lateinit var INSTANCE: Application
-        internal var isDebug = false
+    internal lateinit var INSTANCE: Application
+    internal var isDebug = false
 
-        @JvmStatic
-        fun install(app: Application, debug: Boolean) {
-            INSTANCE = app
-            isDebug = debug
-        }
+    @JvmStatic
+    fun install(app: Application, debug: Boolean) {
+        INSTANCE = app
+        isDebug = debug
     }
 
 }

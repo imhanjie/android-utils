@@ -14,9 +14,9 @@ import java.lang.reflect.Method;
  */
 
 
-public class MIUIStatusBarUtil {
+class MIUIStatusBarUtil {
 
-    public static void setStatusBarDarkMode(boolean darkmode, Activity activity) {
+    static void setStatusBarDarkMode(boolean darkmode, Activity activity) {
         Class<? extends Window> clazz = activity.getWindow().getClass();
         try {
             int darkModeFlag = 0;

@@ -1,4 +1,4 @@
-package com.imhanjie.support.extension
+package com.imhanjie.support.ext
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,6 @@ import android.os.Parcelable
 import java.io.Serializable
 
 /**
- * Intent 扩展
- *
  * @date    2019-10-22
  * @author  hanjie
  */

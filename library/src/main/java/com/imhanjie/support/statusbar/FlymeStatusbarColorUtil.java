@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 /**
  * Created by wangchende on 15-9-7.
  */
-public class FlymeStatusbarColorUtils {
+class FlymeStatusbarColorUtil {
     private static Method mSetStatusBarColorIcon;
     private static Method mSetStatusBarDarkIcon;
     private static Field mStatusBarColorFiled;
