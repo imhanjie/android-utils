@@ -6,11 +6,11 @@ import com.imhanjie.support.AndroidUtils
 fun Float.dp() = TypedValue.applyDimension(
     TypedValue.COMPLEX_UNIT_DIP,
     this,
-    AndroidUtils.INSTANCE.resources.displayMetrics
+    AndroidUtils.APP.resources.displayMetrics
 )
 
 fun Float.sp() = TypedValue.applyDimension(
     TypedValue.COMPLEX_UNIT_SP,
     this,
-    AndroidUtils.INSTANCE.resources.displayMetrics
+    AndroidUtils.APP.resources.displayMetrics
 )

@@ -12,6 +12,6 @@ import android.content.Context
 
 fun copyToClipboard(content: String?) {
     val clipboardManager =
-        AndroidUtils.INSTANCE.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        AndroidUtils.APP.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
     clipboardManager.text = content
 }

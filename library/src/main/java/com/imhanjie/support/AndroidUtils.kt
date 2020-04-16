@@ -12,12 +12,11 @@ import android.app.Application
 
 object AndroidUtils {
 
-    internal lateinit var INSTANCE: Application
+    internal lateinit var APP: Application
     internal var isDebug = false
 
-    @JvmStatic
     fun install(app: Application, debug: Boolean) {
-        INSTANCE = app
+        APP = app
         isDebug = debug
     }
 

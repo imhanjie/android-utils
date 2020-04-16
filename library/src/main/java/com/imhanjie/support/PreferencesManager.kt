@@ -79,7 +79,7 @@ class PreferencesManager private constructor(context: Context, fileName: String)
                 synchronized(PreferencesManager::class.java) {
                     if (managerMap[fileName] === null) {
                         managerMap[fileName] =
-                            PreferencesManager(AndroidUtils.INSTANCE, fileName)
+                            PreferencesManager(AndroidUtils.APP, fileName)
                     }
                 }
             }
