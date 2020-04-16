@@ -16,7 +16,7 @@ publish {
     userOrg = 'melody'
     groupId = 'com.imhanjie.library'
     artifactId = 'android-utils'
-    publishVersion = '0.1.0'
+    publishVersion = '0.1.1'
     desc = 'Android Utils'
     website = 'https://github.com/imhanjie/android-utils'
 }
