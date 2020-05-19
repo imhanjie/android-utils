@@ -1,10 +1,6 @@
 package com.imhanjie.support.ext
 
 import android.util.TypedValue
-import androidx.annotation.ColorRes
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
-import androidx.core.content.ContextCompat
 import com.imhanjie.support.AndroidUtils
 
 val Float.dp: Float
@@ -62,15 +58,3 @@ val Int.spi: Int
         this.toFloat(),
         AndroidUtils.APP.resources.displayMetrics
     ).toInt()
-
-val @receiver:StringRes Int.string
-    get() = AndroidUtils.APP.getString(this)
-
-fun @receiver:StringRes Int.string(vararg formatArgs: Any?) =
-    AndroidUtils.APP.getString(this, *formatArgs)
-
-val @receiver:DrawableRes Int.drawable
-    get() = ContextCompat.getDrawable(AndroidUtils.APP, this)
-
-val @receiver:ColorRes Int.color
-    get() = ContextCompat.getColor(AndroidUtils.APP, this)
