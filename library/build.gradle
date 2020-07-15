@@ -16,7 +16,7 @@ publish {
     userOrg = 'melody'
     groupId = 'com.imhanjie.library'
     artifactId = 'android-utils'
-    publishVersion = '0.1.10'
+    publishVersion = '0.2.0'
     desc = 'Android Utils'
     website = 'https://github.com/imhanjie/android-utils'
 }
@@ -48,5 +48,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api "androidx.appcompat:appcompat:1.1.0"
     api 'com.google.code.gson:gson:2.8.6'
-    api "androidx.core:core-ktx:1.2.0"
+    api "androidx.core:core-ktx:1.3.0"
 }
